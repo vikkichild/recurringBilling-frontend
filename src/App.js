@@ -236,18 +236,7 @@ class App extends Component {
                                         name="cardExpDate"
                                         value={this.state.userData.cardExpDate}
                                         onChange={this.changeHandler}
-                                        placeholder="Card expiration date"/>
-                                </Form.Group>
-
-                                <Form.Group as={Col}>
-                                    <Form.Label>Card code</Form.Label>
-                                    <Form.Control
-                                        type="number"
-                                        min="0"
-                                        name="cardCode"
-                                        value={this.state.userData.cardCode}
-                                        onChange={this.changeHandler}
-                                        placeholder="Card code (CVV/CVC)"/>
+                                        placeholder="YYYY-MM"/>
                                 </Form.Group>
                             </Form.Row>
 
