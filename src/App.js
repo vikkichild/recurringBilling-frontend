@@ -86,7 +86,7 @@ class App extends Component {
                         <Form onSubmit={this.state.agreement ? this.submitFormHandler : this.showAgreementNote}>
                             <Form.Row>
                                 <Form.Group as={Col}>
-                                    <Form.Label>First Name</Form.Label>
+                                    <Form.Label>First Name (*)</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="firstName"
@@ -96,7 +96,7 @@ class App extends Component {
                                 </Form.Group>
 
                                 <Form.Group as={Col}>
-                                    <Form.Label>Last Name</Form.Label>
+                                    <Form.Label>Last Name (*)</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="lastName"
@@ -142,7 +142,7 @@ class App extends Component {
                                 </Form.Group>
 
                                 <Form.Group as={Col}>
-                                    <Form.Label>Tax Id</Form.Label>
+                                    <Form.Label>Tax Id (*)</Form.Label>
                                     <Form.Control
                                         type="number"
                                         min="0"
@@ -220,7 +220,7 @@ class App extends Component {
 
                             <Form.Row>
                                 <Form.Group as={Col}>
-                                    <Form.Label>Card number</Form.Label>
+                                    <Form.Label>Card number (*)</Form.Label>
                                     <Form.Control
                                         type="number"
                                         min="0"
@@ -231,7 +231,7 @@ class App extends Component {
                                 </Form.Group>
 
                                 <Form.Group as={Col}>
-                                    <Form.Label>Card expiration date</Form.Label>
+                                    <Form.Label>Card expiration date (*)</Form.Label>
                                     <Form.Control
                                         name="cardExpDate"
                                         value={this.state.userData.cardExpDate}
